@@ -2,29 +2,35 @@
 
 <head>
     <title>
-        Imersão Dev - Aula 05
+        Imersão Dev - Aula 09
     </title>
 </head>
 
 <body>
     <div class="container">
-        <h1 class="page-title">
-            Aluraflix
-        </h1>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
             alt="">
-        <p class="page-subtitle">
-            Qual seu filme favorito?
-        </p>
-        <div class="form-wrapper">
-            <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
-            <button onClick="adicionarFilme()">Adicionar Filme</button>
-        </div>
+        <h1 class="page-title">Super Trunfo</h1>
+
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+
+        <form id="form">
+            <h2>Escolha o seu atributo</h2>
+            <div class="wrapper">
+                <div id="placar"></div>
+                <div id="quantidade-cartas"></div>
+                <div id="cartas">
+                    <div id="carta-jogador" class="carta"></div>
+                    <div id="carta-maquina" class="carta"></div>
+                </div>
+                <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()"
+                    disabled="false">Jogar</button>
+            </div>
+            <div id="resultado"></div>
+            <button type="button" id="btnProximaRodada" onclick="proximaRodada()" disabled="true">Proxima
+                rodada</button>
+        </form>
     </div>
-    <div id="listaFilmes"></div>
-    <a href="https://alura.com.br/" target="_blank">
-        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    </a>
 </body>
 
 </html>
